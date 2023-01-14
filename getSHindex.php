@@ -32,9 +32,11 @@ class getSHindex {
 	if ( isset ($scopusBilgi['service-error'])) {
 		$this->dikkat = 'siteye bağlanamadı'; //  AUTHORIZATION_ERROR
 		return false;	}
-	if (!isset($scopusBilgi['author-retrieval-response'][0]['coredata']['dc:identifier'])) { // böyle bir yazar yok 
-		$this->dikkat = 'yazar bulunamadı';
-		return false;
+	if (isset($scopusBilgi['author-retrieval-response'][0]['@status'])) { 
+		if ($scopusBilgi['author-retrieval-response'][0]['@status'] == 'not_found') {
+			$this->dikkat = 'yazar bulunamadı'; // böyle bir yazar yok 
+			return false;
+		}
 	}
 	$this->authorId=$id;
 	if (isset($scopusBilgi['author-retrieval-response'][0]['coredata']['document-count']))
