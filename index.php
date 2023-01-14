@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- scopusaid V1.0: bu yazılım Dr. Zafer Akçalı tarafından oluşturulmuştur 
+<!-- scopushindex V1.0: bu yazılım Dr. Zafer Akçalı tarafından oluşturulmuştur 
 programmed by Zafer Akçalı-->
 <html>
 <head>
