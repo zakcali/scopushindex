@@ -25,7 +25,7 @@ class getSHindex {
 	$data=curl_exec($ch);
 	curl_close($ch);
 	$scopusBilgi=(json_decode($data, true));
-print_r ($scopusBilgi);
+// print_r ($scopusBilgi);
 	if ( isset ($scopusBilgi['error-response'])) {
 		$this->dikkat = 'siteye bağlanamadı'; // message:Forbidden
 		return false;	}
