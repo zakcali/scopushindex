@@ -4,7 +4,7 @@ class getSHindex {
 		$this->initialize();
 		}
 	function initialize () {
-		$this->authorId='';  $this->yayinS=''; $this->atifS=''; $this->hindex=''; $this->dikkat=''; 
+		$this->authorId='';  $this->yayinS=''; $this->atifS=''; $this->shindex=''; $this->dikkat=''; 
 		}
 	final function sHindex ($said) {
 	$this->initialize();
@@ -44,6 +44,6 @@ class getSHindex {
 	if (isset($scopusBilgi['author-retrieval-response'][0]['coredata']['cited-by-count']))
 		$this->atifS=$scopusBilgi['author-retrieval-response'][0]['coredata']['cited-by-count'];
 	if (isset($scopusBilgi['author-retrieval-response'][0]['h-index'])) // enhanced or metrics view
-		$this->hindex=$scopusBilgi['author-retrieval-response'][0]['h-index'];
+		$this->shindex=$scopusBilgi['author-retrieval-response'][0]['h-index'];
 	}
 }
