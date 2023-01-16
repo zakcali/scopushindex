@@ -26,7 +26,7 @@ Scopus aid  giriniz. <?php echo ' '.$sh->dikkat;?><br/>
 </form>
 <button id="scopusGoster" onclick="scopusGoster()">Scopus profil sayfasını göster</button>
 <button id="scopusAtifGoster" onclick="scopusAtifGoster()">Scopus atıflarını göster</button> <br>
-h-index: <input type="text" name="hindex" size="2"  id="hindex" value="<?php echo $sh->hindex;?>"> 
+h-index: <input type="text" name="hindex" size="2"  id="hindex" value="<?php echo $sh->shindex;?>"> 
 yayın sayısı: <input type="text" name="yayins" size="4"  id="yayins" value="<?php echo $sh->yayinS;?>"> 
 atif sayısı: <input type="text" name="atifs" size="4"  id="atifs" value="<?php echo $sh->atifS;?>"> <br>
 <script>
